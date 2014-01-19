@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Умный дом WIFI</string>
+    <string name="action_settings">Выход</string>
+    <string name="BTaddress">00:13:03:29:09:41</string>
+    <string name="action_send">Обновить</string>
+    <string name="action_1">Большая</string>
+    <string name="action_2">Маленькая</string>
+    <string name="action_3">Прихожая</string>
+    <string name="action_4">Кухня</string>
+    <string name="action_5">Балкон</string>
+    <string name="action_6">Ванная/туалет</string>
+
+</resources>

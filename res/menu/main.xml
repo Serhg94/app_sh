@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/group1" android:menuCategory="container">
+	    <item
+	        android:id="@+id/action_1"
+	        android:orderInCategory="100"
+	        android:showAsAction="never"
+	        android:title="@string/action_1"/>
+	    <item
+	        android:id="@+id/action_2"
+	        android:orderInCategory="100"
+	        android:showAsAction="never"
+	        android:title="@string/action_2"/>
+	    <item
+	        android:id="@+id/action_3"
+	        android:orderInCategory="100"
+	        android:showAsAction="never"
+	        android:title="@string/action_3"/>
+	    <item
+	        android:id="@+id/action_4"
+	        android:orderInCategory="100"
+	        android:showAsAction="never"
+	        android:title="@string/action_4"/>
+	    <item
+	        android:id="@+id/action_5"
+	        android:orderInCategory="100"
+	        android:showAsAction="never"
+	        android:title="@string/action_5"/>
+	    <item
+	        android:id="@+id/action_6"
+	        android:orderInCategory="100"
+	        android:showAsAction="never"
+	        android:title="@string/action_6"/>
+	</group>
+	<group android:id="@+id/group2" android:menuCategory="secondary">
+        <item android:id="@+id/item1" android:title="Время"></item>
+        <item android:id="@+id/item2" android:title="Температура"></item>
+    </group>
+</menu>
