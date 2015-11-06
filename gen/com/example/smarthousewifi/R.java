@@ -24,19 +24,20 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_1=0x7f08001f;
-        public static final int action_2=0x7f080020;
-        public static final int action_3=0x7f080021;
-        public static final int action_4=0x7f080022;
-        public static final int action_5=0x7f080023;
-        public static final int action_6=0x7f080024;
+        public static final int action_1=0x7f080024;
+        public static final int action_2=0x7f080025;
+        public static final int action_3=0x7f080026;
+        public static final int action_4=0x7f080027;
+        public static final int action_5=0x7f080028;
+        public static final int action_6=0x7f080029;
         public static final int dd1=0x7f08000f;
         public static final int dd2=0x7f080010;
-        public static final int group1=0x7f08001e;
-        public static final int group2=0x7f080025;
+        public static final int gas=0x7f08001f;
+        public static final int group1=0x7f080023;
+        public static final int group2=0x7f08002a;
         public static final int hum=0x7f08000a;
-        public static final int item1=0x7f080026;
-        public static final int item2=0x7f080027;
+        public static final int item1=0x7f08002b;
+        public static final int item2=0x7f08002c;
         public static final int layout=0x7f080000;
         public static final int out1=0x7f08001c;
         public static final int out2=0x7f08001d;
@@ -64,6 +65,10 @@ public final class R {
         public static final int textView3=0x7f080009;
         public static final int textView4=0x7f080016;
         public static final int textView5=0x7f08001b;
+        public static final int textView6=0x7f08001e;
+        public static final int trig1=0x7f080020;
+        public static final int trig2=0x7f080021;
+        public static final int trig3=0x7f080022;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

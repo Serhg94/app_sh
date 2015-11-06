@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
     private static final int UDP_SERVER_PORT = 6667;
     private static final int UDP_LISTEN_PORT = 6666;
     private static final int REF_TIME = 1000;
-	public int curMK = 1;
+	public int curMK = 3;
 	public RecivTask rt;
 	public Updater ref;
 	public static InetAddress IPAddress;
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
     
     
     
-    public Switch r1, r2, r3, r4, b1, b2, b3, b4, dd1, dd2, rb1, rb2, rb3, rb4, rr1, rr2, rr3, rr4, out1, out2;
+    public Switch r1, r2, r3, r4, b1, b2, b3, b4, dd1, dd2, rb1, rb2, rb3, rb4, rr1, rr2, rr3, rr4, out1, out2, trig1, trig2, trig3;
     public RelativeLayout l1;
 	
 	
@@ -124,6 +124,9 @@ public class MainActivity extends Activity {
         rb4 = (Switch) findViewById(R.id.switch12);
         out1 = (Switch) findViewById(R.id.out1);
         out2 = (Switch) findViewById(R.id.out2);
+        trig1 = (Switch) findViewById(R.id.trig1);
+        trig2 = (Switch) findViewById(R.id.trig2);
+        trig3 = (Switch) findViewById(R.id.trig3);
         //r1.setActivated(false);
         r1.setOnClickListener(new OnClickListener() {
         	@Override
@@ -253,6 +256,39 @@ public class MainActivity extends Activity {
         		//Log.i(TAG, "ÍÀÆÀËÎÑÜ!!");
         	}
         });
+        trig1.setOnClickListener(new OnClickListener() {
+        	@Override
+        	public void onClick(View v) {
+        		trig1.toggle();
+        		// TODO Auto-generated method stub
+        		if (sets[curMK].charAt(12)=='0') sendStr("0"+curMK+"set2222222222221"); 
+        		else sendStr("0"+curMK+"set2222222222220");
+        		//changeState(9);
+        		//Log.i(TAG, "ÍÀÆÀËÎÑÜ!!");
+        	}
+        });
+        trig2.setOnClickListener(new OnClickListener() {
+        	@Override
+        	public void onClick(View v) {
+        		trig2.toggle();
+        		// TODO Auto-vgenerated method stub
+        		if (sets[curMK].charAt(13)=='0') sendStr("0"+curMK+"set22222222222221"); 
+        		else sendStr("0"+curMK+"set22222222222220");
+        		//changeState(9);
+        		//Log.i(TAG, "ÍÀÆÀËÎÑÜ!!");
+        	}
+        });
+        trig3.setOnClickListener(new OnClickListener() {
+        	@Override
+        	public void onClick(View v) {
+        		trig3.toggle();
+        		// TODO Auto-generated method stub
+        		if (sets[curMK].charAt(14)=='0') sendStr("0"+curMK+"set222222222222221"); 
+        		else sendStr("0"+curMK+"set222222222222220");
+        		//changeState(9);
+        		//Log.i(TAG, "ÍÀÆÀËÎÑÜ!!");
+        	}
+        });
     }
 	
 	
@@ -342,6 +378,8 @@ public class MainActivity extends Activity {
     		cap = (TextView) findViewById(R.id.hum);
     		cap.setText(""+stat[curMK][2]+"%");
     	}
+		cap = (TextView) findViewById(R.id.gas);
+		cap.setText(""+stat[curMK][0]);
     	if (rebs[curMK].length()<4) return;
     	//Log.i(TAG, butt[curMK]);
     	if (rebs[curMK].charAt(0)=='1') rb1.setChecked(true); else rb1.setChecked(false);
@@ -355,6 +393,9 @@ public class MainActivity extends Activity {
     	if (sets[curMK].charAt(7)=='1') rr4.setChecked(true); else rr4.setChecked(false);
     	if (sets[curMK].charAt(10)=='1') out1.setChecked(true); else out1.setChecked(false);
     	if (sets[curMK].charAt(11)=='1') out2.setChecked(true); else out2.setChecked(false);
+    	if (sets[curMK].charAt(12)=='1') trig1.setChecked(true); else trig1.setChecked(false);
+    	if (sets[curMK].charAt(13)=='1') trig2.setChecked(true); else trig2.setChecked(false);
+    	if (sets[curMK].charAt(14)=='1') trig3.setChecked(true); else trig3.setChecked(false);
     	if (online[curMK]==-1) this.l1.setBackgroundColor(Color.parseColor("#c19a9a"));
     	else this.l1.setBackgroundColor(Color.parseColor("#bad9b4"));
     	r1.setText(r1names[curMK]);

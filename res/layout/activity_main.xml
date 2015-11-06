@@ -260,6 +260,55 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Выход 2" />
+            	
+            	
+             <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_marginTop="14dp"
+                    android:layout_row="0"
+                    android:text="Аналоговый вход:"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/gas"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="right|bottom"
+                    android:layout_row="0"
+                    android:text="-"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </GridLayout>
+            
+             	<Switch
+                android:id="@+id/trig1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Триггер релейного входа 1" />
+
+            	<Switch
+                android:id="@+id/trig2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Триггер релейного входа 2" />
+            	
+            	<Switch
+                android:id="@+id/trig3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Триггер релейного входа 3" />
+
             
         </LinearLayout>
 
@@ -272,7 +321,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="2dp"
-        android:text="Большая"
+        android:text="Прихожая"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
